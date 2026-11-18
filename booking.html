@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA HOTEL — Бронирование</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23172943'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='64' fill='%23c6a66b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">AURORA<span>HOTEL</span></a>
+            <nav class="main-nav">
+                <a href="index.html">Главная</a>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html" class="active">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <a class="header-button" href="#calculator">Забронировать</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero">
+            <p class="eyebrow">ОНЛАЙН-БРОНИРОВАНИЕ</p>
+            <h1>Забронировать номер</h1>
+            <p class="intro-text">Выберите даты и категорию номера — стоимость пересчитается автоматически. Затем заполните контактные данные и подтвердите бронирование.</p>
+        </section>
+
+        <section class="panel booking-panel" id="calculator">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ПЛАНИРОВАНИЕ ПОЕЗДКИ</p>
+                    <h2>Калькулятор проживания</h2>
+                </div>
+                <span class="step-number">01</span>
+            </div>
+            <div class="booking-grid">
+                <label class="field">
+                    <span>Дата заезда</span>
+                    <input type="date" id="calc-checkin">
+                </label>
+                <label class="field">
+                    <span>Дата выезда</span>
+                    <input type="date" id="calc-checkout">
+                </label>
+                <label class="field">
+                    <span>Гости</span>
+                    <select id="calc-guests">
+                        <option value="1">1 взрослый</option>
+                        <option value="2" selected>2 взрослых</option>
+                        <option value="3">2 взрослых + 1 ребёнок</option>
+                        <option value="4">2 взрослых + 2 ребёнка</option>
+                    </select>
+                </label>
+                <label class="field">
+                    <span>Номер</span>
+                    <select id="calc-room">
+                        <option value="standard">Стандарт</option>
+                        <option value="deluxe" selected>Делюкс с видом на город</option>
+                        <option value="premier">Премьер с террасой</option>
+                        <option value="family">Семейный люкс</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="calc-summary">
+                <div class="calc-result-grid">
+                    <div class="calc-cell">
+                        <span>Ночей</span>
+                        <strong id="calc-nights">—</strong>
+                    </div>
+                    <div class="calc-cell">
+                        <span>Цена за ночь</span>
+                        <strong id="calc-per-night">—</strong>
+                    </div>
+                    <div class="calc-cell">
+                        <span>Стоимость номера</span>
+                        <strong id="calc-base">—</strong>
+                    </div>
+                    <div class="calc-cell">
+                        <span>Налоги и сборы (12%)</span>
+                        <strong id="calc-tax">—</strong>
+                    </div>
+                </div>
+                <div class="calc-total">
+                    <span>Итого к оплате</span>
+                    <strong id="calc-total">—</strong>
+                </div>
+                <p class="calc-warning" id="calc-warning"></p>
+            </div>
+        </section>
+
+        <section class="reservation-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ВАШ ВЫБОР</p>
+                    <h2>Ваше бронирование</h2>
+                </div>
+                <span class="step-number">02</span>
+            </div>
+            <article class="reservation-card">
+                <div class="room-photo reservation-photo deluxe-res" role="img" aria-label="Интерьер выбранного номера">
+                    <span class="photo-label" id="res-photo-label">DELUXE</span>
+                </div>
+                <div class="reservation-info">
+                    <p class="room-category" id="res-category">DELUXE ROOM</p>
+                    <h3 id="res-name">Делюкс с видом на город</h3>
+                    <p class="room-details" id="res-details">2 гостя • 1 большая кровать • 32 м²</p>
+                    <p class="stay-dates" id="res-dates">—</p>
+                    <div class="price-list">
+                        <div><span>Стоимость номера</span><strong id="res-base">—</strong></div>
+                        <div><span>Завтрак</span><strong class="included">Включён</strong></div>
+                        <div><span>Налоги и сборы (12%)</span><strong id="res-tax">—</strong></div>
+                    </div>
+                    <div class="total-price"><span>Итого к оплате</span><strong id="res-total">—</strong></div>
+                    <p class="secure-note">Безопасная оплата. Бесплатная отмена за 24 часа до заезда.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="panel guest-panel" id="guest">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ПОСЛЕДНИЙ ШАГ</p>
+                    <h2>Данные гостя</h2>
+                </div>
+                <span class="step-number">03</span>
+            </div>
+            <form action="#" method="post">
+                <div class="guest-grid">
+                    <label class="field">
+                        <span>Имя</span>
+                        <input type="text" placeholder="Введите ваше имя" required>
+                    </label>
+                    <label class="field">
+                        <span>Электронная почта</span>
+                        <input type="email" placeholder="name@example.ru" required>
+                    </label>
+                    <label class="field">
+                        <span>Телефон</span>
+                        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    </label>
+                    <label class="field">
+                        <span>Способ оплаты</span>
+                        <select>
+                            <option>Банковская карта</option>
+                            <option>При заселении</option>
+                            <option>Безналичный расчёт</option>
+                        </select>
+                    </label>
+                    <label class="field full-width">
+                        <span>Пожелания</span>
+                        <textarea rows="4" placeholder="Например, поздний заезд или детская кроватка"></textarea>
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button class="primary-button" type="submit">Подтвердить бронирование</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <a class="logo footer-logo" href="index.html">AURORA<span>HOTEL</span></a>
+                <p>Роскошь, безупречный сервис и атмосфера северного сияния в самом сердце города.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Отель</h3>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p>+7 (812) 555-18-18</p>
+                <p>welcome@aurorahotel.ru</p>
+                <p>Санкт-Петербург, Невский пр., 28</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 AURORA HOTEL. Все права защищены.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
