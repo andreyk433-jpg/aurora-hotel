@@ -17,7 +17,10 @@
                 <a href="booking.html">Бронирование</a>
                 <a href="contacts.html">Контакты</a>
             </nav>
-            <a class="header-button" href="booking.html">Забронировать</a>
+            <div class="header-actions">
+                <a class="auth-link" href="register.html" id="auth-link">Войти</a>
+                <a class="header-button" href="booking.html">Забронировать</a>
+            </div>
         </div>
     </header>
 
@@ -44,7 +47,10 @@
                         </ul>
                         <div class="room-card-bottom">
                             <div><span>от</span><strong>12 900 ₽</strong><small>/ ночь</small></div>
-                            <a class="outline-button" href="booking.html">Забронировать</a>
+                            <div style="display:flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                                <a class="outline-button" href="room.html?id=standard">Подробнее</a>
+                                <a class="outline-button" href="booking.html?room=standard">Забронировать</a>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -62,7 +68,10 @@
                         </ul>
                         <div class="room-card-bottom">
                             <div><span>от</span><strong>18 900 ₽</strong><small>/ ночь</small></div>
-                            <a class="outline-button" href="booking.html">Забронировать</a>
+                            <div style="display:flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                                <a class="outline-button" href="room.html?id=deluxe">Подробнее</a>
+                                <a class="outline-button" href="booking.html?room=deluxe">Забронировать</a>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -80,7 +89,10 @@
                         </ul>
                         <div class="room-card-bottom">
                             <div><span>от</span><strong>24 500 ₽</strong><small>/ ночь</small></div>
-                            <a class="outline-button" href="booking.html">Забронировать</a>
+                            <div style="display:flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                                <a class="outline-button" href="room.html?id=premier">Подробнее</a>
+                                <a class="outline-button" href="booking.html?room=premier">Забронировать</a>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -98,7 +110,10 @@
                         </ul>
                         <div class="room-card-bottom">
                             <div><span>от</span><strong>29 900 ₽</strong><small>/ ночь</small></div>
-                            <a class="outline-button" href="booking.html">Забронировать</a>
+                            <div style="display:flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                                <a class="outline-button" href="room.html?id=family">Подробнее</a>
+                                <a class="outline-button" href="booking.html?room=family">Забронировать</a>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -187,5 +202,7 @@
         </div>
         <div class="footer-bottom">© 2026 AURORA HOTEL. Все права защищены.</div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA HOTEL — Регистрация</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23172943'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='64' fill='%23c6a66b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">AURORA<span>HOTEL</span></a>
+            <nav class="main-nav">
+                <a href="index.html">Главная</a>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a class="auth-link" href="register.html" id="auth-link">Войти</a>
+                <a class="header-button" href="booking.html">Забронировать</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero">
+            <p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p>
+            <h1>Регистрация</h1>
+            <p class="intro-text">Создайте аккаунт, чтобы бронировать номера и видеть историю ваших проживаний в личном кабинете.</p>
+        </section>
+
+        <section class="register-panel">
+            <form id="register-form" action="#" method="post" novalidate autocomplete="off">
+                <div class="register-grid">
+                    <label class="field">
+                        <span>Имя и фамилия</span>
+                        <input type="text" id="reg-name" placeholder="Александр Петров" required>
+                    </label>
+                    <label class="field">
+                        <span>Электронная почта</span>
+                        <input type="email" id="reg-email" placeholder="name@example.ru" required>
+                    </label>
+                    <label class="field full-width">
+                        <span>Телефон</span>
+                        <input type="tel" id="reg-phone" placeholder="+7 (___) ___-__-__" required>
+                    </label>
+                    <label class="field">
+                        <span>Пароль</span>
+                        <input type="password" id="reg-password" placeholder="Минимум 4 символа" required autocomplete="new-password">
+                    </label>
+                    <label class="field">
+                        <span>Повторите пароль</span>
+                        <input type="password" id="reg-confirm" placeholder="Ещё раз" required autocomplete="new-password">
+                    </label>
+                </div>
+                <p class="register-error" id="register-error"></p>
+                <div class="register-submit">
+                    <button class="primary-button" type="submit">Зарегистрироваться</button>
+                </div>
+                <p class="register-login-note">
+                    Уже есть аккаунт? <a href="profile.html">Войти в профиль</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <a class="logo footer-logo" href="index.html">AURORA<span>HOTEL</span></a>
+                <p>Роскошь, безупречный сервис и атмосфера северного сияния в самом сердце города.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Отель</h3>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p>+7 (812) 555-18-18</p>
+                <p>welcome@aurorahotel.ru</p>
+                <p>Санкт-Петербург, Невский пр., 28</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 AURORA HOTEL. Все права защищены.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

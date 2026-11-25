@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA HOTEL — Личный кабинет</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23172943'/%3E%3Ctext x='50' y='70' font-family='Georgia' font-size='64' fill='%23c6a66b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html">AURORA<span>HOTEL</span></a>
+            <nav class="main-nav">
+                <a href="index.html">Главная</a>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a class="auth-link" href="register.html" id="auth-link">Войти</a>
+                <a class="header-button" href="booking.html">Забронировать</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-hero profile-hero">
+            <div class="avatar" id="profile-avatar">A</div>
+            <div>
+                <p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p>
+                <h1 id="profile-name">—</h1>
+                <p class="intro-text" id="profile-email">—</p>
+            </div>
+        </section>
+
+        <div class="profile-toolbar">
+            <a class="outline-button" href="booking.html">Новая бронь</a>
+            <button class="outline-button" id="logout-btn" type="button">Выйти</button>
+        </div>
+
+        <section class="profile-info-card">
+            <div class="profile-info-row">
+                <span>Имя</span>
+                <strong id="profile-info-name">—</strong>
+            </div>
+            <div class="profile-info-row">
+                <span>E-mail</span>
+                <strong id="profile-info-email">—</strong>
+            </div>
+            <div class="profile-info-row">
+                <span>Телефон</span>
+                <strong id="profile-info-phone">—</strong>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ИСТОРИЯ ПРОЖИВАНИЙ</p>
+                    <h2>Мои бронирования</h2>
+                </div>
+            </div>
+            <div class="bookings-list" id="bookings-list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <a class="logo footer-logo" href="index.html">AURORA<span>HOTEL</span></a>
+                <p>Роскошь, безупречный сервис и атмосфера северного сияния в самом сердце города.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Отель</h3>
+                <a href="rooms.html">Номера</a>
+                <a href="booking.html">Бронирование</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <p>+7 (812) 555-18-18</p>
+                <p>welcome@aurorahotel.ru</p>
+                <p>Санкт-Петербург, Невский пр., 28</p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 AURORA HOTEL. Все права защищены.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
